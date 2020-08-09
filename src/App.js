@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 const App = () => {
   const [paper, setPaper] = useState([])
-  const [ searchQuery, setSearchQuery ] = useState('batman')
+  const [ searchQuery, setSearchQuery ] = useState('')
   const [url, setUrl] = useState('http://hn.algolia.com/api/v1/search?query=batman}')
   const [loading ,setLoading] = useState(false)
   
@@ -37,7 +37,7 @@ const App = () => {
   paper.map((n,i)=><p key={i}>{n.title}</p>)
   )
   return <div>
-    <h3>This is Paper</h3>
+    <h3>This is test</h3>
     {searchForm()}
     {showData()}
   </div>
